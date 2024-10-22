@@ -1,0 +1,33 @@
+# Ignore Composer files
+/vendor/
+composer.lock
+
+# Ignore Node.js files
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore build directory
+/assets/build/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+
+# Ignore IDE and editor specific files
+/.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore WordPress specific files
+/wp-config.php
+/wp-content/uploads/
