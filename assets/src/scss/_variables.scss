@@ -1,0 +1,30 @@
+// _variables.scss
+
+// Colors
+$color-white: #ffffff;               // Base white color
+$color-black: #000000;               // Base black color
+$color-primary: #007cba;             // Primary color (for buttons and highlights)
+$color-secondary-light: #f1f1f1;     // Light secondary color (for tab hover)
+$color-tertiary-light: #f7f7f7;      // Light tertiary color (for FAQ item titles)
+$color-border: #ddd;                 // Default border color
+$color-text: #333333;                // Default text color
+$color-hover-background: #e7e7e7;    // Background color on hover for titles
+
+// Font Sizes
+$font-size-small: 0.9rem;            // Font size for small text (e.g., mobile)
+$font-size-medium: 1rem;             // Default font size for body text
+$font-size-large: 1.2rem;             // Font size for larger text (e.g., titles)
+
+// Margins
+$margin-bottom-tabs: 20px;           // Margin below tabs
+$margin-right-tabs: 15px;            // Margin between horizontal tabs
+$margin-bottom-faq-item: 10px;       // Margin below each FAQ item
+$margin-bottom-tabs-mobile: 10px;    // Margin below vertical tabs on mobile
+
+// Padding
+$padding-tabs: 10px 15px;            // Padding for tab links
+$padding-faq-title: 15px;            // Padding for FAQ item titles
+$padding-faq-content: 15px;          // Padding for FAQ item content
+
+// Other
+$min-height-faq-content: 50px;       // Minimum height for content to avoid fluctuations

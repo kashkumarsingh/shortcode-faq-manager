@@ -1,32 +1,36 @@
+// _faq.scss
+
+@use 'variables' as *; // Importing all variables
+
 .faq {
     &__tabs {
-        margin-bottom: 20px;
+        margin-bottom: $margin-bottom-tabs;
 
         .faq__tab-list {
             list-style: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap; // Allow wrapping on smaller screens
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid $color-border;
 
             .faq__tab-item {
-                margin-right: 15px;
+                margin-right: $margin-right-tabs;
 
                 .faq__tab-link {
-                    padding: 10px 15px;
+                    padding: $padding-tabs;
                     text-decoration: none;
-                    color: #333;
+                    color: $color-text;
                     border: 1px solid transparent;
                     border-radius: 5px 5px 0 0;
                     transition: background-color 0.3s, border-color 0.3s;
 
                     &:hover {
-                        background-color: #f1f1f1;
+                        background-color: $color-secondary-light;
                     }
 
                     &.active {
-                        background-color: #fff;
-                        border-color: #ddd;
+                        background-color: $color-white;
+                        border-color: $color-border;
                     }
                 }
             }
@@ -35,27 +39,25 @@
 
     &__list {
         .faq__item {
-            border: 1px solid #ddd;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: $margin-bottom-faq-item;
 
             &__title {
                 cursor: pointer;
-                padding: 15px;
-                background-color: #f7f7f7;
-                border-bottom: 1px solid #ddd;
+                padding: $padding-faq-title;
+                background-color: $color-white;
                 transition: background-color 0.3s;
 
                 &:hover {
-                    background-color: #e7e7e7;
+                    background-color: $color-hover-background;
                 }
             }
 
             &__content {
-                padding: 15px;
-                background-color: #fff;
-                display: none;  // Hidden by default for accordion functionality
-                min-height: 50px; // Set a minimum height to avoid fluctuations
+                padding: $padding-faq-content;
+                background-color: $color-white;
+                display: none; // Hidden by default for accordion functionality
+                min-height: $min-height-faq-content; // Set a minimum height to avoid fluctuations
             }
         }
     }
@@ -67,18 +69,18 @@
                 flex-direction: column; // Stack tabs vertically on smaller screens
 
                 .faq__tab-item {
-                    margin-bottom: 10px; // Add spacing between vertical tabs
+                    margin-bottom: $margin-bottom-tabs-mobile; // Add spacing between vertical tabs
                 }
             }
         }
 
         &__item {
             &__title {
-                font-size: 1rem; // Adjust font size for mobile
+                font-size: $font-size-small; // Adjust font size for mobile
             }
 
             &__content {
-                font-size: 0.9rem; // Adjust font size for mobile
+                font-size: $font-size-small; // Adjust font size for mobile
             }
         }
     }
@@ -89,18 +91,18 @@
                 flex-direction: row; // Horizontal tabs on larger screens
 
                 .faq__tab-item {
-                    margin-right: 15px; // Add spacing between horizontal tabs
+                    margin-right: $margin-right-tabs; // Add spacing between horizontal tabs
                 }
             }
         }
 
         &__item {
             &__title {
-                font-size: 1.2rem; // Adjust font size for larger screens
+                font-size: $font-size-large; // Adjust font size for larger screens
             }
 
             &__content {
-                font-size: 1rem; // Adjust font size for larger screens
+                font-size: $font-size-medium; // Adjust font size for larger screens
             }
         }
     }
